@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">kotlin_prac1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="explain">사랑 심리테스트</string>
+    <string name="question">테이블 위에 꽃이 있습니다.\n꽃을 어떻게 하시겠습니까?</string>
+</resources>

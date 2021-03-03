@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main_Fragment">
+
+    <fragment
+        android:id="@+id/main_Fragment"
+        android:name="com.bigjeon.kotlin_prac1.fragment.Main_Fragment"
+        android:label="fragment_main_"
+        tools:layout="@layout/fragment_main_" >
+        <action
+            android:id="@+id/action_main_Fragment_to_question_Fragment"
+            app:destination="@id/question_Fragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/question_Fragment"
+        android:name="com.bigjeon.kotlin_prac1.fragment.Question_Fragment"
+        android:label="fragment_question_"
+        tools:layout="@layout/fragment_question_" >
+        <action
+            android:id="@+id/action_question_Fragment_to_select_Fragment"
+            app:destination="@id/select_Fragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/result_Fragment"
+        android:name="com.bigjeon.kotlin_prac1.fragment.Result_Fragment"
+        android:label="fragment_result_"
+        tools:layout="@layout/fragment_result_" >
+        <action
+            android:id="@+id/action_result_Fragment_to_main_Fragment"
+            app:destination="@id/main_Fragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit"/>
+    </fragment>
+    <fragment
+        android:id="@+id/select_Fragment"
+        android:name="com.bigjeon.kotlin_prac1.fragment.Select_Fragment"
+        android:label="fragment_select_"
+        tools:layout="@layout/fragment_select_" >
+        <action
+            android:id="@+id/action_select_Fragment_to_result_Fragment"
+            app:destination="@id/result_Fragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit"/>
+    </fragment>
+</navigation>
